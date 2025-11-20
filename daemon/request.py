@@ -100,7 +100,7 @@ class Request():
         # @bksysnet Preapring the webapp hook with WeApRous instance
         # The default behaviour with HTTP server is empty routed
         #
-        # TODO manage the webapp hook in this mounting point
+        # TODO: manage the webapp hook in this mounting point
         #
         
         if not routes == {}:
@@ -116,14 +116,14 @@ class Request():
             #
             #  TODO: implement the cookie function here
             #        by parsing the header            #
-
+        
         return
 
     def prepare_body(self, data, files, json=None):
         self.prepare_content_length(self.body)
         self.body = body
         #
-        # TODO prepare the request authentication
+        # TODO: prepare the request authentication
         #
 	# self.auth = ...
         return
@@ -132,7 +132,7 @@ class Request():
     def prepare_content_length(self, body):
         self.headers["Content-Length"] = "0"
         #
-        # TODO prepare the request authentication
+        # TODO: prepare the request authentication
         #
 	# self.auth = ...
         return
@@ -140,7 +140,7 @@ class Request():
 
     def prepare_auth(self, auth, url=""):
         #
-        # TODO prepare the request authentication
+        # TODO: prepare the request authentication
         #
 	# self.auth = ...
         return
